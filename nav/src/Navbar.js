@@ -24,6 +24,10 @@ function Navbar() {
             padding: "10px 20px",
             borderRadius: '15px',
             fontWeight: 600,
+            fontSize: '20px',
+            lineHeight: '36px',
+            letterSpacing: '0em',
+            textAlign: 'center',
 
             
         },
@@ -33,6 +37,10 @@ function Navbar() {
             padding: "10px 20px",
             borderRadius: '15px',
             fontWeight: 600,
+            fontSize: '20px',
+            lineHeight: '36px',
+            letterSpacing: '0em',
+            textAlign: 'center',
 
             
         },
@@ -44,6 +52,10 @@ function Navbar() {
             textTransform: 'none',
             padding: "10px 30px",
             fontWeight: 600,
+            fontSize: '20px',
+            lineHeight: '36px',
+            letterSpacing: '0em',
+            textAlign: 'center',
             
             
         },
@@ -53,6 +65,10 @@ function Navbar() {
             textTransform: 'none',
             padding: "10px 30px",
             fontWeight: 600,
+            fontSize: '20px',
+            lineHeight: '36px',
+            letterSpacing: '0em',
+            textAlign: 'center',
         }
     }
 

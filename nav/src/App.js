@@ -8,11 +8,15 @@ import Courses from './Courses.js';
 import Login from './Login.js';
 import Signup from './Signup.js';
 import StudentProfile from './StudentProfile.js';
+// import TopNav2 from './TopNav2.jsx';
+//import Sidebar from './Sidebar.jsx';
 
 function App() {
   return (
     <div className="App">
       
+        {/* <TopNav2/>
+        <Sidebar/> */}
         <Navbar/>
           <Routes>
             <Route path='/' element ={<Home/>}/>
