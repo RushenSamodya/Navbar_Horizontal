@@ -1,8 +1,6 @@
 
 *{
-    font-family: 'Poppins', sans-serif;
-    
-
+    font-family: 'Poppins', sans-serif;    
 }
 
 .navbar {
@@ -15,18 +13,14 @@
     line-height: 36px;
     letter-spacing: 0em; 
     text-align: center;
-    
-    
 }
 
 .logo {
     padding-left: 20px;
-   
 } 
 
 .navbar-links {
-    display: flex;
-    
+    display: flex;    
 }
 
 
@@ -43,27 +37,22 @@
 
 .navbar-links a.active {
     color: #f2563e ;
-    font-size: 22px;
-    
-    
-    
+    font-size: 22px;  
 }
+
 .navbar-links a:hover {
     color: #F0634C     ;
-    opacity: 0.8;
-    
+    opacity: 0.8;  
 }
 
 .navbar-buttons {
     display: flex;
     padding-right: 20px;
-    
 }
 
 .navbar-buttons button {
     margin-left: 20px;
-    padding: 10px 20px;
-    
+    padding: 10px 20px;  
     border: none;
     cursor: pointer;
 }

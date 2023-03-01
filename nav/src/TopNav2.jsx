@@ -19,6 +19,7 @@ const Container = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
+  width: 60%;
   
 `;
 
@@ -98,6 +99,12 @@ export default function TopNav2({ query }) {
 
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
+
+  const handleClick = () => {
+    window.location.href = '/StudentProfile';
+
+  };
+
   return (
     <Container data-aos="fade-down">
       <LeftContainer>{query}</LeftContainer>
@@ -258,13 +265,14 @@ export default function TopNav2({ query }) {
         </Icon>
         <Line></Line>
         <Icon>
-          <FaUserCircle />
+          <FaUserCircle onClick={handleClick}/>
         </Icon>
         <NameContainer>
-          <Username>Username</Username>
+          <Username >Username</Username>
           <Role>{teacher ? 'Teacher' : 'Student'}</Role>
         </NameContainer>
       </RightContainer>
     </Container>
+
   );
 }

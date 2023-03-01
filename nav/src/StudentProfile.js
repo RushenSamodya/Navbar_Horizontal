@@ -1,10 +1,15 @@
-import React from "react";
+import React, { useState} from "react";
 import styled from "styled-components";
 import { FaUserCircle } from "react-icons/fa";
 import { AiFillSetting } from "react-icons/ai";
 import { MdModeEditOutline } from "react-icons/md";
 import { BsFillShieldFill } from "react-icons/bs";
 import { IconButton } from "@mui/material";
+
+
+const BigContainer = styled.div`
+  padding-bottom: 80px;
+`
 
 const ContainerMain = styled.div`
   display: flex;
@@ -58,6 +63,8 @@ const UserName = styled.span`
 const UserRole = styled.span`
   font-size: 14px;
   font-weight: 200;
+  color: #F0634C;
+
 `;
 
 const LeftSection = styled.div`
@@ -246,20 +253,32 @@ const BadgeIcon3 = styled.span`
 ;
 `;
 
-function StudentProfile() {
+
+
+function StudentProfile(props) {
+
+  const [userRole, setUserRole] = useState("Student");
+  const [login, setLogin] = useState(false);
+
+  const handleLogin = () => {
+    setLogin(!login);
+    setUserRole(login ? "Teacher" : "Student");
+  };
+
   return (
     <>
+    <BigContainer>
       <Container>
         <UserBar>
           <RightSection>
             <UserIcon>
             <IconButton>
-              <FaUserCircle style={{ fontSize: "65px"}} />
+              <FaUserCircle style={{ fontSize: "65px"}} onClick = {handleLogin} />
               </IconButton>
             </UserIcon>
             <UserInfo>
               <UserName>UserName</UserName>
-              <UserRole>Student</UserRole>
+              <UserRole>{userRole}</UserRole>
             </UserInfo>
           </RightSection>
           <LeftSection>
@@ -337,6 +356,7 @@ function StudentProfile() {
           </BadgeItems>
         </Container3>
       </ContainerMain>
+      </BigContainer>
     </>
   );
 }
