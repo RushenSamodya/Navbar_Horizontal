@@ -20,8 +20,9 @@ function App() {
       
         {/* <TopNav2/>
         <Sidebar/> */}
-        <TopNav2/>
         <Sidebar/>
+        <TopNav2/>
+        
           <Routes>
             <Route path='/' element ={<Home/>}/>
             <Route path='courses' element ={<Courses/>}/>
